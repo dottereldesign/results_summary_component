@@ -108,12 +108,15 @@ h1 {
   color: var(--clr-neutral-300);
   font-size: var(--fs-600);
   font-weight: var(--fw-semi-bold);
+  margin-top: 8px;
 }
 
 h2 {
   color: var(--clr-neutral-400);
   font-size: var(--fs-600);
-  font-weight: var(--fw-semi-bold);
+  font-weight: var(--fw-extra-bold);
+  text-align: left;
+  width: 100%;
 }
 
 h3 {
@@ -126,6 +129,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 24px;
+  padding: 0 16px;
 }
 
 /* Article - Result */
@@ -133,6 +138,58 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--clr-primary-400);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(100%, 375px);
+  padding: 16px 16px 32px 16px;
+  border-radius: 24px;
+}
+
+.result_score {
+  background-color: var(--clr-gradient-300);
+  border-radius: 100%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.result_score p:first-child {
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-900);
+  font-weight: var(--fw-extra-bold);
+  line-height: 1;
+  padding-bottom: 8px;
+}
+
+.result_score p:last-child {
+  color: var(--clr-neutral-300);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-extra-bold);
+  line-height: 1;
+}
+
+.result_fact {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.result_fact p:first-child {
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
+}
+
+.result_fact p:last-child {
+  margin-top: 8px;
+  color: var(--clr-neutral-300);
+  font-size: var(--fs-500);
+  font-weight: var(--fw-regular);
 }
 
 /* Article - Summary */
@@ -141,11 +198,11 @@ main {
   flex-direction: column;
   align-items: center;
   width: min(100%, 375px);
-  padding: 0 16px;
+  margin-top: 24px;
 }
 
 .summary h3 {
-  font-size: var(--fs-500);
+  font-size: var(--fs-400);
   font-weight: var(--fw-bold);
 }
 
@@ -165,8 +222,20 @@ main {
   margin-top: 16px;
 }
 
+.summary_skill-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.summary_skill-wrapper img {
+  padding-right: 8px;
+  width: 30px;
+  height: auto;
+}
+
 .summary_reaction {
   background-color: hsl(0, 100%, 67%, 0.1);
+  margin-top: 16px;
 }
 
 .summary_reaction h3 {
@@ -199,7 +268,7 @@ main {
 
 .summary_skill p {
   color: hsla(0, 0%, 0%, 0.4);
-  font-size: var(--fs-500);
+  font-size: var(--fs-400);
   font-weight: var(--fw-extra-bold);
 }
 
@@ -210,7 +279,7 @@ main {
 .summary_CTA {
   text-decoration: none;
   color: var(--clr-neutral-100);
-  font-size: var(--fs-600);
+  font-size: var(--fs-500);
   font-weight: var(--fw-semi-bold);
   background-color: var(--clr-neutral-400);
   border-radius: 25px;
