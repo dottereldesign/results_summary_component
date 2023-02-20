@@ -103,3 +103,121 @@ select {
   font-size: inherit;
   font-family: var(--ff-primary-100);
 }
+
+h1 {
+  color: var(--clr-neutral-300);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-semi-bold);
+}
+
+h2 {
+  color: var(--clr-neutral-400);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-semi-bold);
+}
+
+h3 {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-semi-bold);
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Article - Result */
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Article - Summary */
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(100%, 375px);
+  padding: 0 16px;
+}
+
+.summary h3 {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-bold);
+}
+
+.summary_skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  width: 100%;
+  border-radius: 10px;
+  height: 50px;
+}
+
+.summary_memory,
+.summary_verbal,
+.summary_visual {
+  margin-top: 16px;
+}
+
+.summary_reaction {
+  background-color: hsl(0, 100%, 67%, 0.1);
+}
+
+.summary_reaction h3 {
+  color: var(--clr-primary-100);
+}
+
+.summary_memory {
+  background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.summary_memory h3 {
+  color: var(--clr-primary-200);
+}
+
+.summary_verbal {
+  background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.summary_verbal h3 {
+  color: var(--clr-primary-300);
+}
+
+.summary_visual {
+  background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.summary_visual h3 {
+  color: var(--clr-primary-400);
+}
+
+.summary_skill p {
+  color: hsla(0, 0%, 0%, 0.4);
+  font-size: var(--fs-500);
+  font-weight: var(--fw-extra-bold);
+}
+
+.summary_skill span {
+  color: hsla(0, 0%, 0%, 0.7);
+}
+
+.summary_CTA {
+  text-decoration: none;
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-semi-bold);
+  background-color: var(--clr-neutral-400);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: min(100%, 375px);
+  margin-top: 24px;
+}
